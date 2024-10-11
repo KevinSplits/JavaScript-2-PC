@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Cuenta Bancaria</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Ejercicio 2: Cuenta Bancaria</h1>
+    <a href="index.html">Siguiente ejercicio</a>
+    <form id="carrito">
+        <label> Monto:</label>
+        <input id="monto" type="text" placeholder="Ingrese el monto">
+        <button type="button" onclick="cuenta.depositar()">Depositar</button>
+        <button type="button" onclick="cuenta.retirar()">Retirar</button>
+        <button type="button" onclick="cuenta.verSaldo()">Ver Saldo</button>
+        <button type="button" onclick="cuenta.verItf()"">ITF</button>
+        <div id="resultado"></div>
+    </form>        
+  <script src="javascript2.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form#carrito {
+    background-color: #fff;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin: 10px 0 5px;
+    /* Estilo para mejorar la visibilidad de las etiquetas */
+    color: #555; /* Color del texto */
+    font-size: 14px; /* Tamaño de fuente */
+}
+
+select, input[type="number"], input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    /* Añadido para mejorar la accesibilidad */
+    font-size: 16px; /* Tamaño de fuente para entradas */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button + button {
+    margin-top: 10px;
+    background-color: #f44336;
+}
+
+button + button:hover {
+    background-color: #e41d1d;
+}
+
+button:nth-of-type(3) {
+    background-color: #ffeb3b; /* Color amarillo para el tercer botón */
+    color: #333; /* Texto en color oscuro para mejor legibilidad */
+}
+
+button:nth-of-type(3):hover {
+    background-color: #fdd835; /* Un tono más oscuro de amarillo al hacer hover */
+}
+
+
+button:last-of-type {
+    background-color: #008CBA;
+}
+
+button:last-of-type:hover {
+    background-color: #007bb5;
+}
+
+
+a {
+    padding: 10px 20px;
+    background-color: #008CBA;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+a:hover {
+    background-color: #007bb5;
+    text-decoration: underline; /* Subrayado al pasar el cursor */
+}

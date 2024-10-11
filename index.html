@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de carrito de compras</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Ejercicio 1: Carrito De Compras</h1>
+    <a href="index2.html">Siguiente ejercicio</a>
+    <form id="carrito">
+        <label> Elija el producto:</label>
+        <select id="nombre" onchange="insertarPrecio()">
+            <option value="Mouse">Mouse</option>
+            <option value="PC">PC</option>
+            <option value="Teclado">Teclado</option>
+            <option value="Audifono">Audifono</option>
+        </select>
+        <label> Precio:</label>
+        <input id="precio" type="text" placeholder="Precio del producto" value="50" readonly>
+        <label> Ingrese la cantidad:</label>
+        <input id="cantidad"  type="number" min="1" value="1">
+        <button type="button" onclick="carrito.agregarProducto()">Agregar Producto</button>
+        <button type="button" onclick="carrito.eliminarProducto()">Eliminar Producto</button>
+        <button type="button" onclick="carrito.mostrarCarrito()">Mostrar Productos</button>  
+        <div id="resultado"></div>
+    </form>        
+  <script src="javascript.js"></script>
+</body>
+</html>
